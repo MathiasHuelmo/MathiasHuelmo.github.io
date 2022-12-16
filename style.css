@@ -27,10 +27,22 @@ h1, h2, p, a, li{
 h1, h2{
     text-align: center;
 }
-a:hover{
+h1{
+    font-size: 35px;
+}
+h2{
+    font-size: 30px;
+}
+h2:hover, h1:hover{
+    color: rgb(175, 247, 7);
+
+}
+.nav:hover{
     color:rgb(175, 247, 7);
     transform: scale(1.5);
     transition: transform 0.6s ease-out;
+    border: 1px solid;
+    border-radius: 7px;
 }
 nav{
     display: flex;
@@ -52,13 +64,8 @@ nav{
     display: flex;
     justify-content: center;
 }
-#lenguajes3{
-    height: 250px;
-    display: flex;
-    justify-content: center;
-}
 
-#html, #css, #javascript, #csharp, #mysql{
+#html, #css, #javascript, #csharp, #mysql, #java{
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
@@ -66,7 +73,7 @@ nav{
 }
 
 
-#html:hover, #css:hover, #javascript:hover, #csharp:hover, #mysql:hover{
+#html:hover, #css:hover, #javascript:hover, #csharp:hover, #mysql:hover, #java:hover{
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
