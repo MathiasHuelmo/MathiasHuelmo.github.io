@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .centrado{
     width: 1000px;
     margin-left: auto;
@@ -13,6 +14,7 @@ body{
     
     background-color: #141f27;
     margin: auto;
+    flex-wrap: wrap;
 
 }
 h1, h2, p, a, li{
@@ -58,10 +60,12 @@ nav{
     height: 250px;
     display: flex;
     justify-content: center;
+    min-width: 200px;
 }
 #lenguajes2{
     height: 250px;
     display: flex;
+    min-width: 200px;
     justify-content: center;
 }
 
@@ -94,4 +98,9 @@ nav{
 }
 footer{
     height: 70px;
+}
+
+#nombre,#apellido,#email,#mensaje, #btnEnviar{
+    width: 430px;
+    margin: 5% 0;
 }
