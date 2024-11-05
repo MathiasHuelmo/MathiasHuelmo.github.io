@@ -24,7 +24,11 @@ h1, h2, p, a, li{
 
 }
 .nav{
+    color:rgb(175, 247, 7);
     margin: 2% 2% 2% 2%;
+    border: 1px solid;
+    border-radius: 7px;
+    font-size: 22px;
 }
 h1, h2{
     text-align: center;
@@ -35,13 +39,13 @@ h1{
 h2{
     font-size: 30px;
 }
-h2:hover, h1:hover{
+h2:hover, h1:hover, p:hover{
     color: rgb(175, 247, 7);
 
 }
 .nav:hover{
     color:rgb(175, 247, 7);
-    transform: scale(1.5);
+    transform: scale(1.1);
     transition: transform 0.6s ease-out;
     border: 1px solid;
     border-radius: 7px;
@@ -89,4 +93,39 @@ footer{
 #nombre,#apellido,#email,#mensaje, #btnEnviar{
     width: 430px;
     margin: 5% 0;
+}
+
+@media (max-width: 768px) {
+    .centrado {
+        width: 100%; /* Ajustar para ocupar todo el ancho de la pantalla */
+        padding: 0 20px; /* Espacio interior */
+    }
+    
+    #lenguajes {
+        grid-template-columns: repeat(2, 1fr); /* Reducir a dos columnas */
+    }
+
+    #nombre, #apellido, #email, #mensaje, #btnEnviar {
+        width: 100%; /* Hacer que el formulario se adapte */
+    }
+}
+
+@media (max-width: 480px) {
+    #lenguajes {
+        grid-template-columns: 1fr; /* Una columna para pantallas muy pequeñas */
+    }
+
+    .nav {
+        font-size: 18px; /* Reducir el tamaño del texto de navegación */
+    }
+}
+
+.imagen-proyecto {
+    max-width: 45%; 
+    height: auto;
+    margin: 4%;
+}
+.imagen-proyecto:hover{
+    transform: scale(1.1);
+    transition: transform 0.6s ease-out;
 }
